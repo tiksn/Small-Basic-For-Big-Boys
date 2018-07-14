@@ -12,4 +12,5 @@ MaximumLocalizationKey = 1000000000
 
 RandomLocalizationKey = MinimumLocalizationKey + Math.GetRandomNumber(MaximumLocalizationKey - MinimumLocalizationKey)
 
+FCClipboard.SetText(RandomLocalizationKey)
 Controls.SetTextBoxText(LocalizationKeyTextBox , RandomLocalizationKey)

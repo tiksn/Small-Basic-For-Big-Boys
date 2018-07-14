@@ -12,4 +12,5 @@ MaximumPortNumber = 65535
 
 RandomPortNumber = MinimumPortNumber + Math.GetRandomNumber(MaximumPortNumber - MinimumPortNumber)
 
+FCClipboard.SetText(RandomPortNumber)
 Controls.SetTextBoxText(PortNumberTextBox , RandomPortNumber)
