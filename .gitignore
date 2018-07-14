@@ -330,6 +330,5 @@ ASALocalRun/
 .mfractor/
 
 ## SmallBasic
-SmallBasicLibrary.dll
-SBDebugger.dll
+*.dll
 *.exe
