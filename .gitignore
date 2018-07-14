@@ -331,4 +331,5 @@ ASALocalRun/
 
 ## SmallBasic
 SmallBasicLibrary.dll
+SBDebugger.dll
 *.exe
