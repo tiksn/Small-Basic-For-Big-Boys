@@ -1,0 +1,15 @@
+GraphicsWindow.Title = "Generate Random Generate Integer Localization Key"
+GraphicsWindow.FontSize = 32
+GraphicsWindow.Height = 150
+GraphicsWindow.Width = 400
+GraphicsWindow.CanResize = 0
+
+LocalizationKeyTextBox = Controls.AddTextBox(20, 50)
+Controls.SetSize(LocalizationKeyTextBox , 360, 50)
+
+MinimumLocalizationKey = 100000000
+MaximumLocalizationKey = 1000000000
+
+RandomLocalizationKey = MinimumLocalizationKey + Math.GetRandomNumber(MaximumLocalizationKey - MinimumLocalizationKey)
+
+Controls.SetTextBoxText(LocalizationKeyTextBox , RandomLocalizationKey)
