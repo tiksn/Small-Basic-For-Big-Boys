@@ -1,0 +1,15 @@
+GraphicsWindow.Title = "Generate Random Port Number"
+GraphicsWindow.FontSize = 32
+GraphicsWindow.Height = 150
+GraphicsWindow.Width = 300
+GraphicsWindow.CanResize = 0
+
+PortNumberTextBox = Controls.AddTextBox(20, 50)
+Controls.SetSize(PortNumberTextBox , 260, 50)
+
+MinimumPortNumber = 49152
+MaximumPortNumber = 65535
+
+RandomPortNumber = MinimumPortNumber + Math.GetRandomNumber(MaximumPortNumber - MinimumPortNumber)
+
+Controls.SetTextBoxText(PortNumberTextBox , RandomPortNumber)
