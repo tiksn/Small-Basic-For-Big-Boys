@@ -1,0 +1,13 @@
+GraphicsWindow.Title = "Generate Random Credit Card Number"
+GraphicsWindow.FontSize = 32
+GraphicsWindow.Height = 150
+GraphicsWindow.Width = 400
+GraphicsWindow.CanResize = 0
+
+CreditCardNumberTextBox = Controls.AddTextBox(20, 50)
+Controls.SetSize(CreditCardNumberTextBox , 360, 50)
+
+CreditCardNumber = BigBoys.GetRandomBigInteger(16)
+
+FCClipboard.SetText(CreditCardNumber)
+Controls.SetTextBoxText(CreditCardNumberTextBox , CreditCardNumber)
