@@ -4,6 +4,7 @@ Imports Microsoft.SmallBasic.Library
 
 <SmallBasicType()>
 Public Module BigBoys
+
     Public Function GetRandomBigInteger(ByVal Length As Integer) As BigInteger
         Dim Result As BigInteger = BigInteger.Zero
         Dim RNG As New Random
@@ -13,5 +14,8 @@ Public Module BigBoys
             Result *= 10
             Result += NextDigit
         Next
+
+        Return Result
     End Function
+
 End Module
