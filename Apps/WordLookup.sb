@@ -1,0 +1,7 @@
+TextWindow.Title = "Word Lookup"
+
+While 0 < 1
+  TextWindow.Write("Word> ")
+  word = TextWindow.Read()
+  TextWindow.WriteLine(Dictionary.GetDefinitionEnglishToEnglish(word))
+EndWhile
